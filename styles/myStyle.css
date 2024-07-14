@@ -1,0 +1,445 @@
+﻿body {
+    direction: rtl;
+    font-family: Rubik;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: white;
+    height: 100%;
+    color: #0033cc;
+}
+
+header {
+    position: relative;
+    height: 60px; /* גובה הכותרת */
+    
+    color: white;
+    
+   
+}
+
+    header::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        background-color: white; /* צבע הקו */
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+        
+    }
+
+
+.nav-menu {
+    background: rgba(0, 51, 204, 0.8);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+    .nav-menu li {
+        margin: 0 15px;
+        position: relative;
+    }
+
+    .nav-menu a {
+        color: white; /* לבן */
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        position: relative;
+    }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: white; /* צבע הקו */
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-menu a:hover::after {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        .nav-menu a:hover {
+            color: white; /* צבע הטקסט במעבר עכבר */
+        }
+.nav-logo {
+    width: 100px; /* רוחב התמונה */
+    height: 50px; /* גובה התמונה */
+    background-image: url('‏‏LOGO 2 - עותק.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#index {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    color: rgba(0, 51, 204, 0.8);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.index-pic {
+    background-image: url('Asset 2-8.png');
+    background-size: cover;
+    height: 35%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.text-container {
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.welcome {
+    font-size: 11pt;
+    padding: 0px 0;
+}
+.indexh1 {
+    font-size: 50pt;
+    padding: 0px 0;
+}
+
+
+h1, h2, p {
+    margin: 0px;
+    padding: 10px 0;
+   
+}
+
+.btn-index {
+    text-align: center;
+}
+
+    .btn-index a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin: 1%;
+        padding: 1% 2%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 51, 204, 0.8);
+    }
+
+#sitemap {
+    padding: 20px;
+}
+
+.sitemap-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 51, 204, 0.2);
+    background: rgba(0, 51, 204, 0.8);
+    color:white;
+}
+
+.sitemap-section {
+    margin: 0 20px;
+    text-align: center;
+}
+
+    .sitemap-section h2 {
+        padding: 10px;
+        margin-bottom: 10px;
+       
+    }
+
+    .sitemap-section li {
+        margin-bottom: 10px;
+    }
+
+   
+        
+
+.h1Inventions{
+    font-size:xx-large;
+}
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+#gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    .gallery-item img, .background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img, .gallery-item:hover .background-image {
+        transform: scale(1.1);
+    }
+
+.overlay {
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 51, 204, 0.8); /* כחול כהה עם שקיפות */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 1;
+    
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 51, 204, 0.4); 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 1;
+    
+}
+
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+
+
+}
+.hiitech-background {
+    background-image: url('hiitech.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.whatsApp-background {
+    background-image: url('WhatsApp Image 2024-06-29 at 15.47.36.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.idf-background {
+    background-image: url('idf.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.food-background {
+    background-image: url('foodNEW.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tech-title {
+    color: #0033cc; /* כחול כהה */
+}
+.invention {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 3%;
+    margin: 2% 0;
+    box-shadow: 0 4px 8px rgba(0, 51, 204, 0.2);
+    background: rgba(0, 51, 204, 0.8);
+    color: white;
+    direction: rtl;
+    text-align: right;
+}
+
+.invention-image {
+    flex: 1;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 20px;
+    background-size: cover;
+    background-position:right;
+    
+}
+    .invention-image.bamba {
+        background-image: url('bamba.png');
+    }
+
+    .invention-image.ptitim {
+        background-image: url('ptitim.png');
+    }
+
+    .invention-image.disk {
+        background-image: url('DiskOnKey.png');
+    }
+
+    .invention-image.waze {
+        background-image: url('waze.png');
+    }
+
+    .invention-image.iron {
+        background-image: url('Iron.png');
+    }
+
+    .invention-image.arrow {
+        background-image: url('Arrow 3.png');
+    }
+
+    .invention-image.water {
+        background-image: url('water.png');
+    }
+
+.invention-image.cherry {
+    background-image: url('cherry.png');
+}
+
+
+
+.invention-content {
+    flex: 2;
+    padding: 1%;
+    text-align: right;
+}
+
+.invention-title {
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+.invention-text {
+    direction: rtl;
+    margin: 0;
+}
+.about {
+    box-shadow: 0 4px 8px rgba(0, 51, 204, 0.2); /* הוספת צל כחול לטקסט */
+    background: rgba(0, 51, 204, 0.8);
+    color: white;
+    padding: 5%;
+}
+
+.image-hit-container {
+    margin-top: 2%;
+}
+
+.contact {
+    background-image: url('BG - 2.png');
+
+  
+}
+.text-container {
+    padding: 2%;
+    border-radius: 1%;
+    color: #0033cc; /* Text color changed */
+    max-width: 60%;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 1%;
+    width: 100%; 
+}
+
+label {
+    margin-bottom: 0.5%;
+    
+}
+
+input, select, textarea {
+    padding: 1%;
+    margin-bottom: 1%;
+    border-radius: 1%;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.radio-group {
+    border: 1px solid #ccc;
+    padding: 1%;
+    border-radius: 1%;
+    margin-bottom: 1%;
+    width: 100%; /* Make sure the radio group takes full width */
+}
+
+    .radio-group legend {
+        margin-bottom: 0.5%;
+       
+    }
+
+    .radio-group .radio-options {
+        display: flex;
+        justify-content: space-around; /* Ensure horizontal alignment */
+        flex-direction: row;
+    }
+
+    .radio-group label {
+        margin-right: 1%;
+        
+    }
+
+.btn {
+    background-color: #0033cc;
+    color: white;
+    padding: 1.5% 3%; /* הגדלת הכפתור */
+    border: none;
+    border-radius: 0.5%;
+    cursor: pointer;
+    font-size: 1.2em; /* הגדלת גודל הטקסט בכפתור */
+    border-radius: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 51, 204, 0.8);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+

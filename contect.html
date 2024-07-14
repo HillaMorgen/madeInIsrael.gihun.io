@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript">  </script>
+</head>
+<body >
+
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li> <div class="nav-logo"></div></li>
+                <li><a href="index.html">בית</a></li>
+                <li><a href="mapweb.html">מפת אתר</a></li>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="inventions.html">תחומי המצאות</a></li>
+                <li><a href="contect.html">צור קשר</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section id="contact">
+        <div class="text-container">
+            <h1>צור קשר</h1>
+            <p>
+                אנחנו תמיד שמחים לשמוע מכם! .<br />
+                במידה ויש לכם המצאה ישראלית שבא לכם לדעת עליה עוד
+                <br /> תמלאו את הטופס ונחזור אליכם עם כול התשובות
+            </p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">שם:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">אימייל:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="nameInvention">שם ההמצאה:</label>
+                    <input type="text" id="nameInvention" name="nameInvention" required>
+                </div>
+                <div class="form-group">
+                    <label for="inventionField">תחום ההמצאה:</label>
+                    <select id="inventionField" name="inventionField" required>
+                        <option value="tech">טכנולוגיה</option>
+                        <option value="agriculture">חקלאות</option>
+                        <option value="military">צבא ובטחון</option>
+                        <option value="food">אוכל</option>
+                    </select>
+                </div>
+                <fieldset class="radio-group">
+                    <legend>אישור פרסום השאלה:</legend>
+                    <div class="radio-options">
+                        <label for="approve">
+                            <input type="radio" id="approve" name="publication" value="approve" required>מאשר פרסום
+                        </label>
+                        <label for="disapprove">
+                            <input type="radio" id="disapprove" name="publication" value="disapprove">לא מאשר פרסום
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label for="message">השאלה שלכם:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">שלח</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p</p>
+    </footer>
+</body>
+</html>
